@@ -4,6 +4,7 @@ EXPOSE 8080
  
 ENV APP_HOME /usr/src/app
 
+# Copy the built JAR file from the target directory to the container
 COPY target/*.jar $APP_HOME/app.jar
 
 WORKDIR $APP_HOME
